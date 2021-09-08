@@ -15,7 +15,7 @@ app.use(cors())
 // app.use('/frontend', express.static('frontend'))
 
 // Have Node serve the files for our built React app
-app.use(express.static(path.resolve(__dirname, '../jwt-project/client/build')));
+app.use(express.static(path.resolve(__dirname, 'client/build')));
 
 //routers
 const products = require("./router/productRouter.js")
@@ -34,7 +34,7 @@ app.get("/welcome", auth, (req, res) => {
 
 // All other GET requests not handled before will return our React app
 // app.get('*', (req, res) => {
-//   res.sendFile(path.resolve(__dirname, '../jwt-project/client/build', 'index.html'));
+//   res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 // });
 
 module.exports = app;

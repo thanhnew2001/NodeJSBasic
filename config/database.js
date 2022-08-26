@@ -1,6 +1,7 @@
 const mongoose = require("mongoose")
 
-MONGO_URI = "mongodb+srv://thanh:thanh@cluster0.ntvke.mongodb.net/mydb?retryWrites=true&w=majority&poolSize=10";
+//MONGO_URI = "mongodb+srv://thanh:thanh@cluster0.ntvke.mongodb.net/mydb?retryWrites=true&w=majority&poolSize=10";
+MONGO_URI = "mongodb+srv://admin:admin@cluster0.mnwyjpj.mongodb.net/db1?retryWrites=true&w=majority";
 
 
 exports.connect = () => {
